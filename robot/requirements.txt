@@ -5,3 +5,4 @@ robotframework==7.0.0
 robotframework-browser==18.6.3
 robotframework-jsonlibrary==0.5
 robotframework-requests==0.9.6
+robotframework-faker==5.0.0
