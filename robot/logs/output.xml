@@ -1,132 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-01T15:43:14.885978" rpa="false" schemaversion="5">
-<suite id="s1" name="Filme" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/filmes/filme.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-01T19:33:41.760079" rpa="false" schemaversion="5">
+<suite id="s1" name="Sessões" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/sessões/sessões.robot">
 <kw name="Start Session" owner="base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-07-01T15:43:20.161406" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/94207d21-f4cf-4b52-9038-d20af6cec813"}</msg>
-<msg time="2025-07-01T15:43:21.756751" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/94207d21-f4cf-4b52-9038-d20af6cec813"}</msg>
+<msg time="2025-07-01T19:33:49.789933" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/aa656b56-e3a7-4015-abe0-cb520569a22f"}</msg>
+<msg time="2025-07-01T19:33:52.502212" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/aa656b56-e3a7-4015-abe0-cb520569a22f"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-01T15:43:20.157434" elapsed="1.599772"/>
+<status status="PASS" start="2025-07-01T19:33:49.787669" elapsed="2.714946"/>
 </kw>
-<status status="PASS" start="2025-07-01T15:43:20.152606" elapsed="1.604961"/>
+<status status="PASS" start="2025-07-01T19:33:49.782881" elapsed="2.724537"/>
 </kw>
-<test id="s1-t1" name="Selecionar Sessao Por Data e Hora e Verificar Precos" line="15">
-<kw name="New Browser" owner="Browser">
-<msg time="2025-07-01T15:43:21.776576" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/8f084528-f6de-48f6-9323-9387ff7cb962"}</msg>
-<msg time="2025-07-01T15:43:22.305100" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/8f084528-f6de-48f6-9323-9387ff7cb962"}</msg>
-<arg>headless=True</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-01T15:43:21.772806" elapsed="0.532682"/>
-</kw>
+<test id="s1-t1" name="Verify Movie Sessions" line="8">
 <kw name="New Page" owner="Browser">
-<msg time="2025-07-01T15:43:25.053010" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-01T15:43:25.053159" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-07-01T19:33:57.928107" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
+<msg time="2025-07-01T19:33:57.928281" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-01T15:43:22.311844" elapsed="2.741646"/>
+<status status="PASS" start="2025-07-01T19:33:52.522611" elapsed="5.410913"/>
 </kw>
-<kw name="Esperar Pagina Carregar">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-01T15:43:35.371768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
-<msg time="2025-07-01T15:43:35.372123" level="INFO">See also file:///home/izadora/%C3%81rea%20de%20trabalho/challengefinal/robot/logs/playwright-log.txt for additional details.</msg>
-<msg time="2025-07-01T15:43:35.372443" level="FAIL">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('.session-date-group') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</msg>
-<arg>css=.session-date-group</arg>
+<msg time="2025-07-01T19:33:58.943624" level="INFO">Waited for Element with selector css=.featured-movies at state visible</msg>
+<arg>css=.featured-movies</arg>
 <arg>visible</arg>
-<arg>timeout=10s</arg>
+<arg>10</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="FAIL" start="2025-07-01T15:43:25.057236" elapsed="10.325185">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('.session-date-group') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
-</kw>
-<status status="FAIL" start="2025-07-01T15:43:25.056507" elapsed="10.326740">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('.session-date-group') to be visible[22m
-
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
-</kw>
-<kw name="Get Element" owner="Browser">
-<var>${grupo_data}</var>
-<arg>css=.session-date-group:has(h3:has-text("${DATA_SESSAO}"))</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.384962" elapsed="0.000110"/>
-</kw>
-<kw name="Should Not Be None">
-<arg>${grupo_data}</arg>
-<arg>Grupo de data não encontrado: ${DATA_SESSAO}</arg>
-<status status="NOT RUN" start="2025-07-01T15:43:35.406924" elapsed="0.000155"/>
-</kw>
-<kw name="Get Element" owner="Browser">
-<var>${sessao}</var>
-<arg>locator=${grupo_data} &gt;&gt; css=.session-card:has(.session-time:has-text("${HORA_SESSAO}"))</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to a Playwright [https://playwright.dev/docs/api/class-locator|Locator].</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.408876" elapsed="0.000388"/>
-</kw>
-<kw name="Should Not Be None">
-<arg>${sessao}</arg>
-<arg>Sessão não encontrada para o horário: ${HORA_SESSAO}</arg>
-<status status="NOT RUN" start="2025-07-01T15:43:35.420094" elapsed="0.000145"/>
-</kw>
-<kw name="Get Text" owner="Browser">
-<var>${preco}</var>
-<arg>locator=${sessao} &gt;&gt; css=.session-price</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.425368" elapsed="0.000199"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${preco}</arg>
-<arg>${PRECO_INTEIRA}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.428267" elapsed="0.000738"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${preco}</arg>
-<arg>${PRECO_MEIA}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.429824" elapsed="0.000540"/>
+<status status="PASS" start="2025-07-01T19:33:57.948789" elapsed="0.995169"/>
 </kw>
 <kw name="Click" owner="Browser">
-<arg>locator=${sessao} &gt;&gt; css=a</arg>
+<msg time="2025-07-01T19:33:58.965910" level="INFO">Clicks the element 'css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]'.</msg>
+<arg>css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.430814" elapsed="0.000074"/>
+<status status="PASS" start="2025-07-01T19:33:58.959846" elapsed="1.378853"/>
 </kw>
-<kw name="Close Browser" owner="Browser">
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2025-07-01T15:43:35.434377" elapsed="0.000177"/>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-07-01T19:34:01.304749" level="INFO">Waited for Element with selector css=.sessions-container h2 at state visible</msg>
+<arg>css=.sessions-container h2</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-07-01T19:34:00.342479" elapsed="0.962599"/>
 </kw>
-<status status="FAIL" start="2025-07-01T15:43:21.759587" elapsed="13.677504">TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  [2m- waiting for locator('.session-date-group') to be visible[22m
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-07-01T19:34:02.752748" level="INFO">Waited for Element with selector css=.session-date-group:has(h3:has-text("01/07/2025")) at state visible</msg>
+<arg>css=.session-date-group:has(h3:has-text("01/07/2025"))</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-07-01T19:34:01.307347" elapsed="1.445734"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-07-01T19:34:08.730141" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-01T19:34:08.756588" level="INFO">See also file:///home/izadora/%C3%81rea%20de%20trabalho/challengefinal/robot/logs/playwright-log.txt for additional details.</msg>
+<msg time="2025-07-01T19:34:08.782653" level="FAIL">Error: locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
 
-Tip: Use "Set Browser Timeout" for increasing the timeout or double check your locator as the targeted element(s) couldn't be found.</status>
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+</msg>
+<arg>css=.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="FAIL" start="2025-07-01T19:34:02.782926" elapsed="6.169642">Error: locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+</status>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00")) .session-theater:has-text("Theater 1 - standard")</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-07-01T19:34:08.963189" elapsed="0.000194"/>
+</kw>
+<kw name="Wait For Elements State" owner="Browser">
+<arg>css=.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00")) .session-price:has-text("Inteira: R$ 15.00 | Meia: R$ 7.50")</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="NOT RUN" start="2025-07-01T19:34:08.974928" elapsed="0.000169"/>
+</kw>
+<kw name="Click" owner="Browser">
+<arg>css=.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00")) a.session-button</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2025-07-01T19:34:08.983030" elapsed="0.002338"/>
+</kw>
+<kw name="Wait For Navigation" owner="Browser">
+<arg>url=${BASE_URL}/sessions/686412a30b46c0776345ea0e</arg>
+<tag>HTTP</tag>
+<tag>Wait</tag>
+<doc>Waits until page has navigated to given ``url``.</doc>
+<status status="NOT RUN" start="2025-07-01T19:34:09.000391" elapsed="0.000313"/>
+</kw>
+<status status="FAIL" start="2025-07-01T19:33:52.507829" elapsed="16.513135">Error: locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) &lt;div class="session-card"&gt;…&lt;/div&gt; aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+</status>
 </test>
-<status status="FAIL" start="2025-07-01T15:43:14.889994" elapsed="20.852998"/>
+<status status="FAIL" start="2025-07-01T19:33:41.766490" elapsed="27.929834"/>
 </suite>
 <statistics>
 <total>
@@ -135,10 +138,9 @@ Tip: Use "Set Browser Timeout" for increasing the timeout or double check your l
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Filme">Filme</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Sessões">Sessões</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-07-01T15:43:15.528680" level="ERROR">Error in file '/home/izadora/Área de trabalho/challengefinal/robot/testes/filmes/filme.robot' on line 3: Resource file '../pages/LoginPage.resource' does not exist.</msg>
 </errors>
 </robot>

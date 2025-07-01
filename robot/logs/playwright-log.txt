@@ -1,64 +1,344 @@
-{"level":30,"time":"2025-07-01T18:43:20.000Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Listening on 50603"}
-(node:16893) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+{"level":30,"time":"2025-07-01T22:33:49.658Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Listening on 60137"}
+(node:33519) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
 (Use `node --trace-deprecation ...` to show where the warning was created)
-{"level":30,"time":"2025-07-01T18:43:20.144Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:20.145Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:20.168Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-07-01T18:43:21.740Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding browser to stack: chromium, version: 127.0.6533.17"}
-{"level":30,"time":"2025-07-01T18:43:21.745Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-07-01T18:43:21.745Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-07-01T18:43:21.767Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:21.768Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:21.784Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method newBrowser"}
-{"level":30,"time":"2025-07-01T18:43:22.289Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding browser to stack: chromium, version: 127.0.6533.17"}
-{"level":30,"time":"2025-07-01T18:43:22.295Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method newBrowser"}
-{"level":30,"time":"2025-07-01T18:43:22.295Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding 0 contexts to browser"}
-{"level":30,"time":"2025-07-01T18:43:22.328Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method newPage"}
-{"level":30,"time":"2025-07-01T18:43:22.329Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2025-07-01T18:43:22.359Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
-{"level":30,"time":"2025-07-01T18:43:23.056Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Video path: undefined"}
-{"level":30,"time":"2025-07-01T18:43:23.056Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
-{"level":30,"time":"2025-07-01T18:43:25.048Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method newPage"}
-{"level":30,"time":"2025-07-01T18:43:25.080Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
-{"level":30,"time":"2025-07-01T18:43:25.081Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group in page."}
-{"level":30,"time":"2025-07-01T18:43:35.087Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2025-07-01T22:33:49.768Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:33:49.769Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:33:49.797Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-07-01T22:33:52.486Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding browser to stack: chromium, version: 127.0.6533.17"}
+{"level":30,"time":"2025-07-01T22:33:52.489Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-07-01T22:33:52.489Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-07-01T22:33:52.515Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:33:52.516Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:33:52.530Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-07-01T22:33:52.531Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-07-01T22:33:52.583Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
+{"level":30,"time":"2025-07-01T22:33:55.014Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Video path: undefined"}
+{"level":30,"time":"2025-07-01T22:33:55.018Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
+{"level":30,"time":"2025-07-01T22:33:57.898Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method newPage"}
+{"level":30,"time":"2025-07-01T22:33:57.997Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:33:58.012Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.featured-movies in page."}
+{"level":30,"time":"2025-07-01T22:33:58.931Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:33:58.999Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method click"}
+{"level":30,"time":"2025-07-01T22:33:59.002Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.movie-card a[href=\"/movies/686412a30b46c0776345ea06\"] in page."}
+{"level":30,"time":"2025-07-01T22:34:00.330Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method click"}
+{"level":30,"time":"2025-07-01T22:34:00.354Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:00.357Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.sessions-container h2 in page."}
+{"level":30,"time":"2025-07-01T22:34:01.292Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:01.338Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:01.353Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:02.718Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:02.888Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:02.889Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:03.530Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
 ================= Original suppressed error =================
-locator.waitFor: Timeout 10000ms exceeded.
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
 Call log:
-  [2m- waiting for locator('.session-date-group') to be visible[22m
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
 
     at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
-    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28) {
-  name: 'TimeoutError'
-}
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
 =============================================================
-{"level":30,"time":"2025-07-01T18:43:35.099Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method takeScreenshot"}
-{"level":30,"time":"2025-07-01T18:43:35.100Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","Take screenshot with options: ":{"path":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
-{"level":30,"time":"2025-07-01T18:43:35.368Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method takeScreenshot"}
-{"level":30,"time":"2025-07-01T18:43:35.478Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.504Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.530Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.551Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.565Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
-{"level":30,"time":"2025-07-01T18:43:35.565Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=504e1676-3b73-4225-95fe-31e3b9598efd"}
-{"level":30,"time":"2025-07-01T18:43:35.565Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
-{"level":30,"time":"2025-07-01T18:43:35.584Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.594Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.602Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2025-07-01T18:43:35.605Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2025-07-01T18:43:35.622Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method switchBrowser"}
-{"level":30,"time":"2025-07-01T18:43:35.624Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method switchBrowser"}
-{"level":30,"time":"2025-07-01T18:43:35.642Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=504e1676-3b73-4225-95fe-31e3b9598efd"}
-{"level":30,"time":"2025-07-01T18:43:35.642Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
-{"level":30,"time":"2025-07-01T18:43:35.657Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.671Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.686Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
-{"level":30,"time":"2025-07-01T18:43:35.687Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=504e1676-3b73-4225-95fe-31e3b9598efd"}
-{"level":30,"time":"2025-07-01T18:43:35.687Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
-{"level":30,"time":"2025-07-01T18:43:35.693Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method closeContext"}
-{"level":30,"time":"2025-07-01T18:43:35.724Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Removed page=d8f36f37-4dc9-4ff0-8d87-889a3b08cd2b from context=b1394862-d73e-4276-a152-73c965347af8 page stack"}
-{"level":30,"time":"2025-07-01T18:43:35.734Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method closeContext"}
-{"level":30,"time":"2025-07-01T18:43:35.769Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.773Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
-{"level":30,"time":"2025-07-01T18:43:35.985Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method closeAllBrowsers"}
-{"level":30,"time":"2025-07-01T18:43:36.367Z","pid":16893,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-01T22:34:03.595Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:03.596Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:03.993Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:04.009Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.015Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+{"level":30,"time":"2025-07-01T22:34:04.239Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:04.267Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.267Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:04.469Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.484Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.486Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:04.731Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:04.751Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.752Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:04.970Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:04.988Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:04.989Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+{"level":30,"time":"2025-07-01T22:34:05.180Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:05.203Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:05.203Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:05.430Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:05.448Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:05.448Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:05.708Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:05.728Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:05.733Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:06.015Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:06.028Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.028Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:06.241Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.252Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.255Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+{"level":30,"time":"2025-07-01T22:34:06.402Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:06.423Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.423Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:06.630Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:06.648Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.648Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:06.827Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:06.848Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:06.849Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+{"level":30,"time":"2025-07-01T22:34:07.083Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:07.102Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:07.102Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:07.328Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:07.345Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:07.345Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+{"level":30,"time":"2025-07-01T22:34:07.510Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:07.530Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:07.531Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:07.744Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:07.762Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method waitForElementState"}
+{"level":30,"time":"2025-07-01T22:34:07.763Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Strict mode is enabled, find Locator with css=.session-date-group:has(h3:has-text(\"01/07/2025\")) .session-card:has(.session-time:has-text(\"12:00\")) in page."}
+{"level":30,"time":"2025-07-01T22:34:07.970Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Error of node method  waitForElementState"}
+================= Original suppressed error =================
+locator.waitFor: Error: strict mode violation: locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') resolved to 3 elements:
+    1) <div class="session-card">…</div> aka getByText(':00 Theater 1 - standard Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    2) <div class="session-card">…</div> aka getByText(':00 Theater 3 - IMAX Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+    3) <div class="session-card">…</div> aka getByText(':00 Theater 2 - 3D Inteira: R$ 15.00 | Meia: R$ 7.50Selecionar Assentos').first()
+
+Call log:
+  [2m- waiting for locator('.session-date-group:has(h3:has-text("01/07/2025")) .session-card:has(.session-time:has-text("12:00"))') to be visible[22m
+
+    at waitForElementState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:9191:19)
+    at async PlaywrightServer.waitForElementsState (/home/izadora/Área de trabalho/challengefinal/robot/venv/lib/python3.12/site-packages/Browser/wrapper/index.js:10691:28)
+=============================================================
+{"level":30,"time":"2025-07-01T22:34:08.014Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-07-01T22:34:08.024Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","Take screenshot with options: ":{"path":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/screenshot/fail-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-07-01T22:34:08.645Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-07-01T22:34:09.102Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.146Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.164Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.197Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.235Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
+{"level":30,"time":"2025-07-01T22:34:09.237Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=99b7cb3c-27ec-4d5d-87f4-dd137918c125"}
+{"level":30,"time":"2025-07-01T22:34:09.237Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
+{"level":30,"time":"2025-07-01T22:34:09.268Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.315Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.335Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-01T22:34:09.342Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-01T22:34:09.368Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-07-01T22:34:09.376Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-07-01T22:34:09.399Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=99b7cb3c-27ec-4d5d-87f4-dd137918c125"}
+{"level":30,"time":"2025-07-01T22:34:09.399Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
+{"level":30,"time":"2025-07-01T22:34:09.431Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.445Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.454Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active context"}
+{"level":30,"time":"2025-07-01T22:34:09.454Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changing current active page: page=99b7cb3c-27ec-4d5d-87f4-dd137918c125"}
+{"level":30,"time":"2025-07-01T22:34:09.454Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Changed active page"}
+{"level":30,"time":"2025-07-01T22:34:09.469Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-07-01T22:34:09.552Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Removed page=f1c913e3-8cd2-4a74-884b-d5ffe769781b from context=4cbd456c-4b19-473b-ae4b-6211d4e0a0fc page stack"}
+{"level":30,"time":"2025-07-01T22:34:09.665Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-07-01T22:34:09.726Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:09.728Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-07-01T22:34:10.125Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-07-01T22:34:10.685Z","pid":33519,"hostname":"izadora-IdeaPad-3-15IGL05","msg":"End of node method closeAllBrowsers"}
