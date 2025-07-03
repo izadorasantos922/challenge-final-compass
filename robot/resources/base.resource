@@ -15,6 +15,7 @@ Resource             ../resources/pages/SessionPage.resource
 Resource             ../resources/pages/homePage.resource
 Resource             ../resources/pages/CadastroPage.resource
 Resource             ../resources/pages/PerfilPage.resource
+Resource             ../resources/pages/ReservasPage.resource
 
 
 

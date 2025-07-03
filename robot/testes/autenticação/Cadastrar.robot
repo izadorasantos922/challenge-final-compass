@@ -5,9 +5,9 @@ Resource         ../../resources/base.resource
 Suite Setup      Start Session 
 
 
-
 *** Test Cases ***
 Cadastrar usuário com e-mail já existente
+    [Tags]    cadastro duplicado
     # Cadastra primeiro usuário
     Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
@@ -23,6 +23,7 @@ Cadastrar usuário com e-mail já existente
 
 
 Cadastro de usuario
+    [Tags]    cadastro usuario
     Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro

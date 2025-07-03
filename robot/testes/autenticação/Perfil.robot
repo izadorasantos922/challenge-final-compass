@@ -6,7 +6,9 @@ Suite Setup      Start Session
 
 
 *** Test Cases ***
+
 Visualizar dados do perfil
+    [Tags]    perfil
     Gerar dados de usuário dinâmico para o cadastro
     Abrir página de cadastro
     Preencher formulário de cadastro

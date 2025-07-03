@@ -1,7 +1,6 @@
 *** Settings ***
 Documentation    Verifica a exibição, seleção e compra de sessões de filmes na página de detalhes, incluindo horários, preços, assentos e confirmação de reserva.
 
-Resource    ../selectors.resource
 Resource    ../base.resource
 
 *** Keywords ***

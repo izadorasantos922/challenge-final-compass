@@ -3,8 +3,6 @@ Library           Browser
 Resource          LoginPage.resource  
 Resource          ../../resources/base.resource
 
-Suite Setup       Start Session
-
 *** Keywords ***
 Acessar página inicial
     New Page    ${BASE_URL}
