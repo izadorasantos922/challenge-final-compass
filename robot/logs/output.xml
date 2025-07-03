@@ -1,230 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-03T13:11:41.636591" rpa="false" schemaversion="5">
-<suite id="s1" name="Reservas" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/reservas/reservas.robot">
-<test id="s1-t1" name="Verificar reserva" line="8">
+<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-03T13:38:14.101183" rpa="false" schemaversion="5">
+<suite id="s1" name="Sessões" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/sessões/sessões.robot">
+<test id="s1-t1" name="Visualizar detalhes de uma sessão na interface" line="8">
 <kw name="Start Session" owner="base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-07-03T13:11:43.162749" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/9d2981f2-14c8-46a8-900f-3db4aab8d916"}</msg>
-<msg time="2025-07-03T13:11:43.850529" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/9d2981f2-14c8-46a8-900f-3db4aab8d916"}</msg>
+<msg time="2025-07-03T13:38:18.017300" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/04addf52-7d36-4e26-8a91-e802d240b8cd"}</msg>
+<msg time="2025-07-03T13:38:19.998108" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/04addf52-7d36-4e26-8a91-e802d240b8cd"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-03T13:11:43.161296" elapsed="0.689591"/>
+<status status="PASS" start="2025-07-03T13:38:18.015915" elapsed="1.982784"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:43.158494" elapsed="0.692661"/>
+<status status="PASS" start="2025-07-03T13:38:18.013822" elapsed="1.985175"/>
 </kw>
 <kw name="Abrir página de login" owner="LoginPage">
 <kw name="New Page" owner="Browser">
-<msg time="2025-07-03T13:11:45.695784" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002/login</msg>
-<msg time="2025-07-03T13:11:45.695927" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-07-03T13:38:23.684329" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002/login</msg>
+<msg time="2025-07-03T13:38:23.684505" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-03T13:11:43.855127" elapsed="1.841079"/>
+<status status="PASS" start="2025-07-03T13:38:20.001039" elapsed="3.683812"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-03T13:11:46.011420" level="INFO">Waited for Element with selector css=h1:has-text("Login") at state visible</msg>
+<msg time="2025-07-03T13:38:24.124455" level="INFO">Waited for Element with selector css=h1:has-text("Login") at state visible</msg>
 <arg>css=h1:has-text("Login")</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-03T13:11:45.696660" elapsed="0.315104"/>
+<status status="PASS" start="2025-07-03T13:38:23.685396" elapsed="0.441222"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:43.852848" elapsed="2.159571"/>
+<status status="PASS" start="2025-07-03T13:38:19.999862" elapsed="4.127864"/>
 </kw>
 <kw name="Preencher login" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-03T13:11:46.014946" level="INFO">Fills the text 'user@example.com' in the given field.</msg>
+<msg time="2025-07-03T13:38:24.130790" level="INFO">Fills the text 'user@example.com' in the given field.</msg>
 <arg>css=#email</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:46.014206" elapsed="0.219196"/>
+<status status="PASS" start="2025-07-03T13:38:24.129868" elapsed="0.176141"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-03T13:11:46.238842" level="INFO">Fills the text 'password123' in the given field.</msg>
+<msg time="2025-07-03T13:38:24.308394" level="INFO">Fills the text 'password123' in the given field.</msg>
 <arg>css=#password</arg>
 <arg>${senha}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:46.233850" elapsed="0.073698"/>
+<status status="PASS" start="2025-07-03T13:38:24.307217" elapsed="0.070975"/>
 </kw>
 <arg>${LOGIN_USER_EMAIL}</arg>
 <arg>${LOGIN_SENHA_USER}</arg>
-<status status="PASS" start="2025-07-03T13:11:46.013481" elapsed="0.294414"/>
+<status status="PASS" start="2025-07-03T13:38:24.128750" elapsed="0.249776"/>
 </kw>
 <kw name="Enviar login" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2025-07-03T13:11:46.310546" level="INFO">Clicks the element 'css=form button[type="submit"]'.</msg>
+<msg time="2025-07-03T13:38:24.395384" level="INFO">Clicks the element 'css=form button[type="submit"]'.</msg>
 <arg>css=form button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:46.309546" elapsed="0.162308"/>
+<status status="PASS" start="2025-07-03T13:38:24.388718" elapsed="0.334999"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:46.308924" elapsed="0.163179"/>
+<status status="PASS" start="2025-07-03T13:38:24.379084" elapsed="0.344968"/>
 </kw>
 <kw name="Verificar login com sucesso" owner="LoginPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-03T13:11:46.933692" level="INFO">Waited for Element with selector css=h1:has-text("Welcome to Cinema App") at state visible</msg>
+<msg time="2025-07-03T13:38:25.791549" level="INFO">Waited for Element with selector css=h1:has-text("Welcome to Cinema App") at state visible</msg>
 <arg>css=h1:has-text("Welcome to Cinema App")</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-03T13:11:46.473241" elapsed="0.460760"/>
+<status status="PASS" start="2025-07-03T13:38:24.728354" elapsed="1.063564"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:46.472641" elapsed="0.461574"/>
+<status status="PASS" start="2025-07-03T13:38:24.726575" elapsed="1.065625"/>
 </kw>
-<kw name="Ir para página de minhas reservas" owner="ReservasPage">
+<kw name="Acessar detalhes de um filme em cartaz" owner="homePage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-03T13:11:47.236807" level="INFO">Waited for Element with selector xpath=//a[normalize-space(text())="Minhas Reservas"] at state visible</msg>
-<arg>xpath=//a[normalize-space(text())="Minhas Reservas"]</arg>
+<msg time="2025-07-03T13:38:26.074798" level="INFO">Waited for Element with selector css=.featured-movies at state visible</msg>
+<arg>css=.featured-movies</arg>
 <arg>visible</arg>
-<arg>5</arg>
+<arg>10</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-03T13:11:46.937189" elapsed="0.300012"/>
+<status status="PASS" start="2025-07-03T13:38:25.798203" elapsed="0.276949"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-07-03T13:11:47.246035" level="INFO">Clicks the element 'xpath=//a[normalize-space(text())="Minhas Reservas"]'.</msg>
-<arg>xpath=//a[normalize-space(text())="Minhas Reservas"]</arg>
+<msg time="2025-07-03T13:38:26.079719" level="INFO">Clicks the element 'css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]'.</msg>
+<arg>css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:47.237769" elapsed="0.442782"/>
+<status status="PASS" start="2025-07-03T13:38:26.076115" elapsed="0.486017"/>
 </kw>
+<status status="PASS" start="2025-07-03T13:38:25.797309" elapsed="0.765154"/>
+</kw>
+<kw name="Verificar sessões disponíveis" owner="SessionPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-03T13:11:47.726669" level="INFO">Waited for Element with selector css=main h1 at state visible</msg>
-<arg>css=main h1</arg>
+<msg time="2025-07-03T13:38:27.459681" level="INFO">Waited for Element with selector xpath=//h2[text()="Sessões Disponíveis"] at state visible</msg>
+<arg>xpath=//h2[text()="Sessões Disponíveis"]</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-03T13:11:47.681177" elapsed="0.045860"/>
+<status status="PASS" start="2025-07-03T13:38:26.569994" elapsed="0.890038"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2025-07-03T13:11:48.009106" level="INFO">Text: 'Minhas Reservas'</msg>
-<arg>css=main h1</arg>
+<msg time="2025-07-03T13:38:27.919326" level="INFO">Text: 'Sessões Disponíveis'</msg>
+<arg>xpath=//h2[text()="Sessões Disponíveis"]</arg>
 <arg>equal</arg>
-<arg>Minhas Reservas</arg>
+<arg>Sessões Disponíveis</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:47.730748" elapsed="0.278636"/>
+<status status="PASS" start="2025-07-03T13:38:27.464929" elapsed="0.454694"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:46.936585" elapsed="1.073353"/>
-</kw>
-<kw name="Extrair código da primeira reserva" owner="ReservasPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-03T13:11:48.079888" level="INFO">Waited for Element with selector css=.reservation-header h3 &gt;&gt; nth=0 at state visible</msg>
-<arg>css=.reservation-header h3 &gt;&gt; nth=0</arg>
+<msg time="2025-07-03T13:38:28.958105" level="INFO">Waited for Element with selector css=[class="sessions-list"] at state visible</msg>
+<arg>css=[class="sessions-list"]</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.011503" elapsed="0.068748"/>
+<status status="PASS" start="2025-07-03T13:38:27.920178" elapsed="1.038307"/>
 </kw>
-<kw name="Get Text" owner="Browser">
-<msg time="2025-07-03T13:11:48.146710" level="INFO">Text: 'Reserva #6866a919'</msg>
-<msg time="2025-07-03T13:11:48.147035" level="INFO">${texto_reserva} = Reserva #6866a919</msg>
-<var>${texto_reserva}</var>
-<arg>css=.reservation-header h3 &gt;&gt; nth=0</arg>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-07-03T13:38:28.959307" level="INFO">Length is 27.</msg>
+<arg>css=[class="sessions-list"]</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-07-03T13:38:28.958976" elapsed="0.000429"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T13:38:29.005454" level="INFO">${session_count} = 2</msg>
+<var>${session_count}</var>
+<arg>css=[class="session-date-group"]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.087581" elapsed="0.059519"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T13:38:28.960343" elapsed="0.045205"/>
 </kw>
-<kw name="Split String" owner="String">
-<msg time="2025-07-03T13:11:48.148235" level="INFO">${parts} = ['Reserva', '#6866a919']</msg>
-<var>${parts}</var>
-<arg>${texto_reserva}</arg>
-<doc>Splits the ``string`` using ``separator`` as a delimiter string.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.147627" elapsed="0.000674"/>
-</kw>
-<kw name="Get Substring" owner="String">
-<msg time="2025-07-03T13:11:48.150138" level="INFO">${codig_8_digits} = #6866a91</msg>
-<var>${codig_8_digits}</var>
-<arg>${parts[1]}</arg>
-<arg>0</arg>
-<arg>8</arg>
-<doc>Returns a substring from ``start`` index to ``end`` index.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.148685" elapsed="0.001689"/>
-</kw>
-<kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2025-07-03T13:11:48.151404" level="INFO">${codig_8_digits} = #6866a91</msg>
-<arg>${codig_8_digits}</arg>
-<doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.150884" elapsed="0.000637"/>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 sessão</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.006659" elapsed="0.000842"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-07-03T13:11:48.152182" level="INFO">Código extraído da primeira reserva: #6866a91</msg>
-<arg>Código extraído da primeira reserva: ${codig_8_digits}</arg>
+<msg time="2025-07-03T13:38:29.008915" level="INFO">Encontradas 2 sessões disponíveis</msg>
+<arg>Encontradas ${session_count} sessões disponíveis</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.151851" elapsed="0.000440"/>
+<status status="PASS" start="2025-07-03T13:38:29.008336" elapsed="0.000723"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:48.010651" elapsed="0.141829"/>
-</kw>
-<kw name="Confirmar se a reserva está correta" owner="ReservasPage">
-<kw name="Get Text" owner="Browser">
-<msg time="2025-07-03T13:11:48.266862" level="INFO">Text: 'Reserva #6866a919'</msg>
-<msg time="2025-07-03T13:11:48.267198" level="INFO">${reserva_id} = Reserva #6866a919</msg>
-<var>${reserva_id}</var>
-<arg>css=.reservation-header h3 &gt;&gt; nth=0</arg>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T13:38:29.041781" level="INFO">${session_time_count} = 10</msg>
+<var>${session_time_count}</var>
+<arg>css=[class="session-time"]</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.154087" elapsed="0.113182"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.009638" elapsed="0.032238"/>
 </kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${reserva_id}</arg>
-<arg>${codig_8_digits}</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.267819" elapsed="0.000503"/>
-</kw>
-<kw name="Should Contain" owner="BuiltIn">
-<arg>${reserva_id}</arg>
-<arg>Reserva #</arg>
-<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.272490" elapsed="0.000550"/>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_time_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 horário das sessões</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.044274" elapsed="0.001565"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-07-03T13:11:48.273799" level="INFO">Código #6866a91 validado com sucesso na primeira reserva</msg>
-<arg>Código ${codig_8_digits} validado com sucesso na primeira reserva</arg>
+<msg time="2025-07-03T13:38:29.048584" level="INFO">Encontradas 10 horários de sessões disponíveis</msg>
+<arg>Encontradas ${session_time_count} horários de sessões disponíveis</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-07-03T13:11:48.273461" elapsed="0.000452"/>
+<status status="PASS" start="2025-07-03T13:38:29.048028" elapsed="0.000684"/>
 </kw>
-<status status="PASS" start="2025-07-03T13:11:48.153446" elapsed="0.120652"/>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T13:38:29.083140" level="INFO">${session_theater_count} = 10</msg>
+<var>${session_theater_count}</var>
+<arg>css=[class="session-theater"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.049164" elapsed="0.034077"/>
 </kw>
-<tag>Verficar reserva</tag>
-<status status="PASS" start="2025-07-03T13:11:43.151577" elapsed="5.127323"/>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_theater_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 theater</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.084918" elapsed="0.000905"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T13:38:29.086960" level="INFO">Encontradas 10 theaters disponíveis</msg>
+<arg>Encontradas ${session_theater_count} theaters disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.086255" elapsed="0.000822"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T13:38:29.128818" level="INFO">${session_price_count} = 10</msg>
+<var>${session_price_count}</var>
+<arg>css=[class="session-price"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.088837" elapsed="0.040089"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_price_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 price das sessões</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.131183" elapsed="0.000925"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T13:38:29.132911" level="INFO">Encontradas 10 prices de sessões disponíveis</msg>
+<arg>Encontradas ${session_price_count} prices de sessões disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T13:38:29.132589" elapsed="0.000431"/>
+</kw>
+<status status="PASS" start="2025-07-03T13:38:26.566179" elapsed="2.567645"/>
+</kw>
+<tag>sessões disponiveis</tag>
+<status status="PASS" start="2025-07-03T13:38:18.007545" elapsed="11.126745"/>
 </test>
-<doc>Cenários de criar reservas dentro do módulo de reservations</doc>
-<status status="PASS" start="2025-07-03T13:11:41.638148" elapsed="7.003438"/>
+<doc>Cenários de visualizar sessões dentro do módulo de sessões</doc>
+<status status="PASS" start="2025-07-03T13:38:14.102777" elapsed="15.499594"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Verficar reserva</stat>
+<stat pass="1" fail="0" skip="0">sessões disponiveis</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Reservas">Reservas</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sessões">Sessões</stat>
 </suite>
 </statistics>
 <errors>

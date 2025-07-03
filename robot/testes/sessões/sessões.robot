@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Cenários de visualizar sessões dentro do módulo de sessões
+Documentation        Visualizar sessões
 Resource             ../../resources/base.resource
 
 Test Setup           Start Session  

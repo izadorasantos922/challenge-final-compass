@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation        Cenários de criar reservas dentro do módulo de reservations
+Documentation        Verificar reservas
 Resource             ../../resources/base.resource
 
 Test Setup           Start Session  
