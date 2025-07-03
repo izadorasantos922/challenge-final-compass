@@ -1,415 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-02T23:11:04.590918" rpa="false" schemaversion="5">
-<suite id="s1" name="Home" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/filmes/home.robot">
+<robot generator="Robot 7.0 (Python 3.12.3 on linux)" generated="2025-07-03T12:24:28.591579" rpa="false" schemaversion="5">
+<suite id="s1" name="Sessões" source="/home/izadora/Área de trabalho/challengefinal/robot/testes/sessões/sessões.robot">
+<test id="s1-t1" name="Visualizar detalhes de uma sessão na interface" line="8">
 <kw name="Start Session" owner="base" type="SETUP">
 <kw name="New Browser" owner="Browser">
-<msg time="2025-07-02T23:11:06.139400" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/76c84297-e376-44a6-8c1d-8ff7a2ea8541"}</msg>
-<msg time="2025-07-02T23:11:06.818927" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/76c84297-e376-44a6-8c1d-8ff7a2ea8541"}</msg>
+<msg time="2025-07-03T12:24:30.091417" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/home/izadora/\u00c1rea de trabalho/challengefinal/robot/logs/browser/traces/6521d143-cb08-43fe-af0d-50c4211871de"}</msg>
+<msg time="2025-07-03T12:24:30.779081" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/home/izadora/Área de trabalho/challengefinal/robot/logs/browser/traces/6521d143-cb08-43fe-af0d-50c4211871de"}</msg>
 <arg>browser=chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2025-07-02T23:11:06.137451" elapsed="0.681824"/>
+<status status="PASS" start="2025-07-03T12:24:30.089670" elapsed="0.690369"/>
 </kw>
-<status status="PASS" start="2025-07-02T23:11:06.135516" elapsed="0.684037"/>
+<status status="PASS" start="2025-07-03T12:24:30.086918" elapsed="0.693907"/>
 </kw>
-<test id="s1-t1" name="Deve Exibir Banner Com Informações do Cinema" line="8">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:08.905404" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:08.905541" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:06.853075" elapsed="2.052861"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:09.398265" level="INFO">Waited for Element with selector css=.features-section at state visible</msg>
-<arg>css=.features-section</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:08.909308" elapsed="0.489248"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:06.819923" elapsed="2.579617"/>
-</test>
-<test id="s1-t2" name="Deve Exibir Seção De Filmes Em Cartaz Com Pôsteres" line="12">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:11.886679" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:11.886888" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:10.052731" elapsed="1.836499"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:12.219033" level="INFO">Waited for Element with selector css=.featured-movies at state visible</msg>
-<arg>css=.featured-movies</arg>
-<arg>visible</arg>
-<arg>10</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:11.890555" elapsed="0.328769"/>
-</kw>
-<kw name="Get Elements" owner="Browser">
-<msg time="2025-07-02T23:11:12.587527" level="INFO">Found locator('.featured-movies img').first(),locator('.featured-movies img').nth(1),locator('.featured-movies img').nth(2) Locators successfully.</msg>
-<msg time="2025-07-02T23:11:12.591196" level="INFO">${posters} = ['css=.featured-movies img &gt;&gt; nth=0', 'css=.featured-movies img &gt;&gt; nth=1', 'css=.featured-movies img &gt;&gt; nth=2']</msg>
-<var>${posters}</var>
-<arg>css=.featured-movies img</arg>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
-for all matched elements by ``selector``.</doc>
-<status status="PASS" start="2025-07-02T23:11:12.220069" elapsed="0.371213"/>
-</kw>
-<kw name="Get Length" owner="BuiltIn">
-<msg time="2025-07-02T23:11:12.593425" level="INFO">Length is 3.</msg>
-<msg time="2025-07-02T23:11:12.593609" level="INFO">${length} = 3</msg>
-<var>${length}</var>
-<arg>${posters}</arg>
-<doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2025-07-02T23:11:12.593015" elapsed="0.000638"/>
-</kw>
-<kw name="Should Be True" owner="BuiltIn">
-<arg>${length} &gt; 0</arg>
-<arg>No posters found!</arg>
-<doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2025-07-02T23:11:12.598326" elapsed="0.005859"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:10.027307" elapsed="2.580299"/>
-</test>
-<test id="s1-t3" name="Deve Ser Responsivo Em Diferentes Tamanhos" line="19">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:15.399369" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:15.399527" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:12.903539" elapsed="2.496330"/>
-</kw>
-<kw name="Set Viewport Size" owner="Browser">
-<msg time="2025-07-02T23:11:15.739202" level="INFO">Set viewport size to: [object Object]</msg>
-<arg>1920</arg>
-<arg>1080</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2025-07-02T23:11:15.408124" elapsed="0.331430"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:16.361182" level="INFO">Waited for Element with selector css=header at state visible</msg>
-<arg>css=header</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:15.743753" elapsed="0.617801"/>
-</kw>
-<kw name="Set Viewport Size" owner="Browser">
-<msg time="2025-07-02T23:11:16.558216" level="INFO">Set viewport size to: [object Object]</msg>
-<arg>768</arg>
-<arg>1024</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2025-07-02T23:11:16.362202" elapsed="0.196371"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:16.680339" level="INFO">Waited for Element with selector css=header at state visible</msg>
-<arg>css=header</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:16.559186" elapsed="0.121518"/>
-</kw>
-<kw name="Set Viewport Size" owner="Browser">
-<msg time="2025-07-02T23:11:16.777489" level="INFO">Set viewport size to: [object Object]</msg>
-<arg>375</arg>
-<arg>667</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2025-07-02T23:11:16.682793" elapsed="0.097010"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:16.937956" level="INFO">Waited for Element with selector css=header at state visible</msg>
-<arg>css=header</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:16.782329" elapsed="0.156009"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:12.867896" elapsed="4.073623"/>
-</test>
-<test id="s1-t4" name="Deve Exibir Links Rápidos Para Principais Áreas" line="28">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:19.990291" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:19.990453" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:17.380830" elapsed="2.609966"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:20.473632" level="INFO">Waited for Element with selector css=nav a[href="/movies"] at state visible</msg>
-<arg>css=nav a[href="/movies"]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:19.993901" elapsed="0.480127"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:20.811385" level="INFO">Waited for Element with selector css=nav a[href="/login"] at state visible</msg>
-<arg>css=nav a[href="/login"]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:20.474668" elapsed="0.337176"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:20.957690" level="INFO">Waited for Element with selector css=nav a[href="/register"] at state visible</msg>
-<arg>css=nav a[href="/register"]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:20.812510" elapsed="0.145646"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:17.355433" elapsed="3.603231"/>
-</test>
-<test id="s1-t5" name="Deve Ter Navegação Principal No Cabeçalho" line="34">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:24.200365" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:24.200518" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:21.402222" elapsed="2.798654"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:24.722912" level="INFO">Waited for Element with selector css=nav at state visible</msg>
-<arg>css=nav</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:24.207141" elapsed="0.516293"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:21.366858" elapsed="3.357117"/>
-</test>
-<test id="s1-t6" name="Usuário Autenticado Deve Ver Menu Personalizado" line="38">
 <kw name="Abrir página de login" owner="LoginPage">
 <kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:28.029923" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002/login</msg>
-<msg time="2025-07-02T23:11:28.030070" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2025-07-03T12:24:33.019080" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002/login</msg>
+<msg time="2025-07-03T12:24:33.019227" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${BASE_URL}/login</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:25.430516" elapsed="2.599867"/>
+<status status="PASS" start="2025-07-03T12:24:30.784831" elapsed="2.235889"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:28.387122" level="INFO">Waited for Element with selector css=h1:has-text("Login") at state visible</msg>
+<msg time="2025-07-03T12:24:33.480124" level="INFO">Waited for Element with selector css=h1:has-text("Login") at state visible</msg>
 <arg>css=h1:has-text("Login")</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:28.030973" elapsed="0.356537"/>
+<status status="PASS" start="2025-07-03T12:24:33.021352" elapsed="0.459188"/>
 </kw>
-<status status="PASS" start="2025-07-02T23:11:25.429671" elapsed="2.961887"/>
+<status status="PASS" start="2025-07-03T12:24:30.782034" elapsed="2.698808"/>
 </kw>
 <kw name="Preencher login" owner="LoginPage">
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-02T23:11:28.395426" level="INFO">Fills the text 'user@example.com' in the given field.</msg>
+<msg time="2025-07-03T12:24:33.485160" level="INFO">Fills the text 'user@example.com' in the given field.</msg>
 <arg>css=#email</arg>
 <arg>${email}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-02T23:11:28.394236" elapsed="0.154880"/>
+<status status="PASS" start="2025-07-03T12:24:33.482993" elapsed="0.137755"/>
 </kw>
 <kw name="Fill Text" owner="Browser">
-<msg time="2025-07-02T23:11:28.555135" level="INFO">Fills the text 'password123' in the given field.</msg>
+<msg time="2025-07-03T12:24:33.622508" level="INFO">Fills the text 'password123' in the given field.</msg>
 <arg>css=#password</arg>
 <arg>${senha}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<status status="PASS" start="2025-07-02T23:11:28.549676" elapsed="0.082329"/>
+<status status="PASS" start="2025-07-03T12:24:33.621325" elapsed="0.079172"/>
 </kw>
 <arg>${LOGIN_USER_EMAIL}</arg>
 <arg>${LOGIN_SENHA_USER}</arg>
-<status status="PASS" start="2025-07-02T23:11:28.392445" elapsed="0.239887"/>
+<status status="PASS" start="2025-07-03T12:24:33.482006" elapsed="0.218851"/>
 </kw>
 <kw name="Enviar login" owner="LoginPage">
 <kw name="Click" owner="Browser">
-<msg time="2025-07-02T23:11:28.637319" level="INFO">Clicks the element 'css=form button[type="submit"]'.</msg>
+<msg time="2025-07-03T12:24:33.704722" level="INFO">Clicks the element 'css=form button[type="submit"]'.</msg>
 <arg>css=form button[type="submit"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-02T23:11:28.635694" elapsed="0.224443"/>
+<status status="PASS" start="2025-07-03T12:24:33.703484" elapsed="0.218422"/>
 </kw>
-<status status="PASS" start="2025-07-02T23:11:28.633615" elapsed="0.226963"/>
+<status status="PASS" start="2025-07-03T12:24:33.702656" elapsed="0.219577"/>
 </kw>
 <kw name="Verificar login com sucesso" owner="LoginPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:29.473271" level="INFO">Waited for Element with selector css=h1:has-text("Welcome to Cinema App") at state visible</msg>
+<msg time="2025-07-03T12:24:35.394315" level="INFO">Waited for Element with selector css=h1:has-text("Welcome to Cinema App") at state visible</msg>
 <arg>css=h1:has-text("Welcome to Cinema App")</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:28.864737" elapsed="0.608906"/>
+<status status="PASS" start="2025-07-03T12:24:33.924484" elapsed="1.470239"/>
 </kw>
-<status status="PASS" start="2025-07-02T23:11:28.863370" elapsed="0.610589"/>
+<status status="PASS" start="2025-07-03T12:24:33.923720" elapsed="1.471294"/>
 </kw>
+<kw name="Acessar detalhes de um filme em cartaz" owner="homePage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:29.640145" level="INFO">Waited for Element with selector css=nav a[href="/profile"] at state visible</msg>
-<arg>css=nav a[href="/profile"]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:29.478299" elapsed="0.162211"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:29.882466" level="INFO">Waited for Element with selector css=button.btn-logout at state visible</msg>
-<arg>css=button.btn-logout</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:29.641193" elapsed="0.241703"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:29.998232" level="INFO">Waited for Element with selector css=nav a[href="/reservations"] at state visible</msg>
-<arg>css=nav a[href="/reservations"]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:29.888854" elapsed="0.109783"/>
-</kw>
-<status status="PASS" start="2025-07-02T23:11:25.384500" elapsed="4.614661"/>
-</test>
-<test id="s1-t7" name="Deve Exibir Informações Detalhadas de um Filme" line="47">
-<kw name="New Page" owner="Browser">
-<msg time="2025-07-02T23:11:32.472991" level="INFO">Successfully initialized new page object and opened url: http://localhost:3002</msg>
-<msg time="2025-07-02T23:11:32.473162" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<arg>${BASE_URL}</arg>
-<tag>BrowserControl</tag>
-<tag>Setter</tag>
-<doc>Open a new Page.</doc>
-<status status="PASS" start="2025-07-02T23:11:30.416476" elapsed="2.057174"/>
-</kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:33.237646" level="INFO">Waited for Element with selector css=.featured-movies at state visible</msg>
+<msg time="2025-07-03T12:24:35.497848" level="INFO">Waited for Element with selector css=.featured-movies at state visible</msg>
 <arg>css=.featured-movies</arg>
 <arg>visible</arg>
 <arg>10</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:32.474300" elapsed="0.763754"/>
+<status status="PASS" start="2025-07-03T12:24:35.398058" elapsed="0.100160"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2025-07-02T23:11:33.245640" level="INFO">Clicks the element 'css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]'.</msg>
+<msg time="2025-07-03T12:24:35.504568" level="INFO">Clicks the element 'css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]'.</msg>
 <arg>css=.movie-card a[href="/movies/686412a30b46c0776345ea06"]</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2025-07-02T23:11:33.242784" elapsed="0.586557"/>
+<status status="PASS" start="2025-07-03T12:24:35.500510" elapsed="0.435803"/>
 </kw>
+<status status="PASS" start="2025-07-03T12:24:35.397051" elapsed="0.539626"/>
+</kw>
+<kw name="Verificar sessões disponíveis" owner="SessionPage">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:34.750069" level="INFO">Waited for Element with selector css=.movie-info at state visible</msg>
-<arg>css=.movie-info</arg>
+<msg time="2025-07-03T12:24:36.351851" level="INFO">Waited for Element with selector xpath=//h2[text()="Sessões Disponíveis"] at state visible</msg>
+<arg>xpath=//h2[text()="Sessões Disponíveis"]</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:33.832493" elapsed="0.917938"/>
+<status status="PASS" start="2025-07-03T12:24:35.946381" elapsed="0.405767"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-07-03T12:24:36.573238" level="INFO">Text: 'Sessões Disponíveis'</msg>
+<arg>xpath=//h2[text()="Sessões Disponíveis"]</arg>
+<arg>equal</arg>
+<arg>Sessões Disponíveis</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-07-03T12:24:36.352614" elapsed="0.220924"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:34.838183" level="INFO">Waited for Element with selector css=.movie-synopsis p at state visible</msg>
-<arg>css=.movie-synopsis p</arg>
+<msg time="2025-07-03T12:24:37.293652" level="INFO">Waited for Element with selector css=[class="sessions-list"] at state visible</msg>
+<arg>css=[class="sessions-list"]</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:34.751111" elapsed="0.087469"/>
+<status status="PASS" start="2025-07-03T12:24:36.578216" elapsed="0.715804"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:34.893337" level="INFO">Waited for Element with selector css=.movie-meta span:nth-child(2) at state visible</msg>
-<arg>css=.movie-meta span:nth-child(2)</arg>
-<arg>visible</arg>
-<arg>5</arg>
+<kw name="Should Not Be Empty" owner="BuiltIn">
+<msg time="2025-07-03T12:24:37.294977" level="INFO">Length is 27.</msg>
+<arg>css=[class="sessions-list"]</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.294608" elapsed="0.003566"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T12:24:37.374192" level="INFO">${session_count} = 2</msg>
+<var>${session_count}</var>
+<arg>css=[class="session-date-group"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:34.839314" elapsed="0.054492"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.298797" elapsed="0.075500"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:34.968259" level="INFO">Waited for Element with selector css=.movie-meta span:nth-child(3) at state visible</msg>
-<arg>css=.movie-meta span:nth-child(3)</arg>
-<arg>visible</arg>
-<arg>5</arg>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 sessão</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.374862" elapsed="0.000790"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T12:24:37.376551" level="INFO">Encontradas 2 sessões disponíveis</msg>
+<arg>Encontradas ${session_count} sessões disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.376189" elapsed="0.000480"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T12:24:37.416214" level="INFO">${session_time_count} = 10</msg>
+<var>${session_time_count}</var>
+<arg>css=[class="session-time"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:34.896186" elapsed="0.072454"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.377033" elapsed="0.039280"/>
 </kw>
-<kw name="Wait For Elements State" owner="Browser">
-<msg time="2025-07-02T23:11:35.095254" level="INFO">Waited for Element with selector css=.movie-director at state visible</msg>
-<arg>css=.movie-director</arg>
-<arg>visible</arg>
-<arg>5</arg>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_time_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 horário das sessões</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.420789" elapsed="0.000962"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T12:24:37.424395" level="INFO">Encontradas 10 horários de sessões disponíveis</msg>
+<arg>Encontradas ${session_time_count} horários de sessões disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.423893" elapsed="0.001778"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T12:24:37.466063" level="INFO">${session_theater_count} = 10</msg>
+<var>${session_theater_count}</var>
+<arg>css=[class="session-theater"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
 <tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2025-07-02T23:11:34.974190" elapsed="0.121444"/>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.426172" elapsed="0.039987"/>
 </kw>
-<status status="PASS" start="2025-07-02T23:11:30.389225" elapsed="4.711052"/>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_theater_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 theater</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.466668" elapsed="0.002506"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T12:24:37.470019" level="INFO">Encontradas 10 theaters disponíveis</msg>
+<arg>Encontradas ${session_theater_count} theaters disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.469656" elapsed="0.000478"/>
+</kw>
+<kw name="Get Element Count" owner="Browser">
+<msg time="2025-07-03T12:24:37.486910" level="INFO">${session_price_count} = 10</msg>
+<var>${session_price_count}</var>
+<arg>css=[class="session-price"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.470510" elapsed="0.016497"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${session_price_count} &gt;= 1</arg>
+<arg>msg=Deve ter pelo menos 1 price das sessões</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.487522" elapsed="0.000735"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-07-03T12:24:37.490108" level="INFO">Encontradas 10 prices de sessões disponíveis</msg>
+<arg>Encontradas ${session_price_count} prices de sessões disponíveis</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-07-03T12:24:37.489634" elapsed="0.000598"/>
+</kw>
+<status status="PASS" start="2025-07-03T12:24:35.943143" elapsed="1.547314"/>
+</kw>
+<tag>sessões disponiveis</tag>
+<status status="PASS" start="2025-07-03T12:24:30.080146" elapsed="7.412719"/>
 </test>
-<status status="PASS" start="2025-07-02T23:11:04.592661" elapsed="31.153963"/>
+<doc>Cenários de visualizar sessões dentro do módulo de sessões</doc>
+<status status="PASS" start="2025-07-03T12:24:28.593279" elapsed="9.313889"/>
 </suite>
 <statistics>
 <total>
-<stat pass="7" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">sessões disponiveis</stat>
 </tag>
 <suite>
-<stat pass="7" fail="0" skip="0" id="s1" name="Home">Home</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sessões">Sessões</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2025-07-03T12:24:29.351873" level="ERROR">Error in file '/home/izadora/Área de trabalho/challengefinal/robot/resources/pages/SessionPage.resource' on line 4: Resource file '../selectors.resource' does not exist.</msg>
+<msg time="2025-07-03T12:24:29.355055" level="ERROR">Error in file '/home/izadora/Área de trabalho/challengefinal/robot/resources/pages/homePage.resource' on line 6: Setting 'Suite Setup' is not allowed in resource file.</msg>
 </errors>
 </robot>

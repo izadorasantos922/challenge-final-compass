@@ -11,6 +11,8 @@ Library              String
 Resource             ../resources/env.resource
 
 Resource             ../resources/pages/LoginPage.resource
+Resource             ../resources/pages/SessionPage.resource
+Resource             ../resources/pages/homePage.resource
 Resource             ../resources/pages/CadastroPage.resource
 Resource             ../resources/pages/PerfilPage.resource
 
