@@ -1,4 +1,0 @@
-não é possivel achar imagens do filme
-erro ao atualizar perfil com postman
-erro ao buscar detalhe de reserva
-lOGIN COM SENHA ERRADA DA ERRADO POR CONTA DA FALTA DE MENSAGEM DE ERRO DE CORDO COM ROBOT
