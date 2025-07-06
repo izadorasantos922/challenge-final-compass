@@ -1,0 +1,1346 @@
+{
+	"id": "74a9f3f5-e357-4ace-b8db-8c93fe1089c6",
+	"name": "Cinema App",
+	"timestamp": "2025-07-06T19:54:26.999Z",
+	"collection_id": "44577075-38631014-e926-4853-8db1-7e43c9d478f3",
+	"folder_id": 0,
+	"environment_id": "44577075-2fe723f6-a4b3-4d10-8fe9-390be6956dcc",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-07-06T19:54:18.300Z",
+	"totalFail": 28,
+	"results": [
+		{
+			"id": "94440517-6fa5-49e1-a93b-3f590ac6c349",
+			"name": "registro de usuario",
+			"url": "http://localhost:5000/api/v1/auth/register",
+			"time": 386,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code é 201": true
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				386
+			],
+			"allTests": [
+				{
+					"Status code é 201": true
+				}
+			]
+		},
+		{
+			"id": "35b1a156-936a-43b5-bd39-e694fff8a3bb",
+			"name": "registro de usuario com uma letra no nome",
+			"url": "http://localhost:5000/api/v1/auth/register",
+			"time": 338,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code é 400": false
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				338
+			],
+			"allTests": [
+				{
+					"Status code é 400": false
+				}
+			]
+		},
+		{
+			"id": "7bf6f192-0041-421a-91d4-c6aa21c69043",
+			"name": "registro de usuario com senha fraca",
+			"url": "http://localhost:5000/api/v1/auth/register",
+			"time": 69,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code é 400": true
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				69
+			],
+			"allTests": [
+				{
+					"Status code é 400": true
+				}
+			]
+		},
+		{
+			"id": "1bf35e84-f487-45a8-944e-118c9e82013c",
+			"name": "registro do mesmo usuario",
+			"url": "http://localhost:5000/api/v1/auth/register",
+			"time": 59,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code é 400": true
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				59
+			],
+			"allTests": [
+				{
+					"Status code é 400": true
+				}
+			]
+		},
+		{
+			"id": "5c6f66e7-f99c-4adb-a2a1-caa8230d53a4",
+			"name": "registro de usuario com email mal formatado",
+			"url": "http://localhost:5000/api/v1/auth/register",
+			"time": 53,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code é 400": true
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				53
+			],
+			"allTests": [
+				{
+					"Status code é 400": true
+				}
+			]
+		},
+		{
+			"id": "0d2ab6e8-ce31-4543-92b7-df4e0d458c60",
+			"name": "Login",
+			"url": "http://localhost:5000/api/v1/auth/login",
+			"time": 187,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				187
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "dd7f4eb4-afa9-4812-b836-52a2f6ccd6cf",
+			"name": "Login com credenciais inválidas",
+			"url": "http://localhost:5000/api/v1/auth/login",
+			"time": 247,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 401": true
+			},
+			"testPassFailCounts": {
+				"Status code é 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				247
+			],
+			"allTests": [
+				{
+					"Status code é 401": true
+				}
+			]
+		},
+		{
+			"id": "25ba33a1-c5a0-4fc8-92d1-8d8bf89b247d",
+			"name": "login de admin",
+			"url": "http://localhost:5000/api/v1/auth/login",
+			"time": 234,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				234
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "e67a82e1-abeb-490f-974b-8f7743309fa1",
+			"name": "Ver perfil",
+			"url": "http://localhost:5000/api/v1/auth/me",
+			"time": 25,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "66b701c8-aa54-4707-a54b-60ea532ee233",
+			"name": "Atualizar perfil",
+			"url": "http://localhost:5000/api/v1/auth/profile",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "4c3c3bd3-93ed-46b7-a9ef-a94a7c7061c7",
+			"name": "Editar perfil sem nome",
+			"url": "http://localhost:5000/api/v1/auth/profile",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "aa5630b7-9544-438f-8c64-1d51011c78f4",
+			"name": "acessar rota protegida",
+			"url": "http://localhost:5000/api/v1/users/685c31b1d6c1ddbd4c0f22e9",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 401": true
+			},
+			"testPassFailCounts": {
+				"Status code é 401": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code é 401": true
+				}
+			]
+		},
+		{
+			"id": "3286835e-414b-4048-9b1c-b1a65e453ef3",
+			"name": "buscar todos usuarios",
+			"url": "http://localhost:5000/api/v1/users",
+			"time": 13,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "ffd8e339-7434-4141-856f-e62830d4b8b8",
+			"name": "Excluir usuario",
+			"url": "http://localhost:5000/api/v1/users/686412a30b46c0776345ea03",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "04c9b1d8-8b64-42b4-95e2-d66076d047d4",
+			"name": "Buscar teatros",
+			"url": "http://localhost:5000/api/v1/theaters",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				55
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "c1475951-a46f-4029-bc09-007629c72056",
+			"name": "Buscar teatro",
+			"url": "http://localhost:5000/api/v1/theaters/686412a30b46c0776345ea0a",
+			"time": 886,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				886
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "baaa1e2b-e985-468c-8bc2-bca6f2da19a2",
+			"name": "Buscar teatro inexistente",
+			"url": "http://localhost:5000/api/v1/theaters/686412a30b46c0776345ea0o",
+			"time": 21,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status code é 404": false
+			},
+			"testPassFailCounts": {
+				"Status code é 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				21
+			],
+			"allTests": [
+				{
+					"Status code é 404": false
+				}
+			]
+		},
+		{
+			"id": "957ba23d-d390-4ea4-9707-66d338fcb154",
+			"name": "Criar um novo teatro",
+			"url": "http://localhost:5000/api/v1/theaters",
+			"time": 20,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 201": false
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Status code é 201": false
+				}
+			]
+		},
+		{
+			"id": "763f4b3f-54d1-4643-b80c-4f24330afd87",
+			"name": "atualizar teatro",
+			"url": "http://localhost:5000/api/v1/theaters/686412a30b46c0776345ea0a",
+			"time": 13,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "e6180c58-aa08-411c-99a0-daa835f08608",
+			"name": "atualizar teatro com  nomes com uma letra",
+			"url": "http://localhost:5000/api/v1/theaters/686412a30b46c0776345ea0a",
+			"time": 13,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 400": false
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Status code é 400": false
+				}
+			]
+		},
+		{
+			"id": "d72a2da0-cbd2-4116-9b15-9c95b1056e65",
+			"name": "excluir teatro",
+			"url": "http://localhost:5000/api/v1/theaters/686412a30b46c0776345ea0c",
+			"time": 29,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "ecae3621-f1be-4a56-8c38-d3bd448f6fd1",
+			"name": "Buscar sessões",
+			"url": "http://localhost:5000/api/v1/sessions",
+			"time": 446,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				446
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "eec9b8d3-284a-4b45-9369-c89ce0e28252",
+			"name": "Bucar sessão",
+			"url": "http://localhost:5000/api/v1/sessions/686412a30b46c0776345ea0e",
+			"time": 120,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				120
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "83850143-6e5e-42a1-b929-0ff9c75d863a",
+			"name": "Criar nova sessão",
+			"url": "http://localhost:5000/api/v1/sessions",
+			"time": 12,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 201": false
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Status code é 201": false
+				}
+			]
+		},
+		{
+			"id": "029eff3b-bd89-484c-8761-56064a056875",
+			"name": "Atualizar sessão",
+			"url": "http://localhost:5000/api/v1/sessions/686412a30b46c0776345ea0e",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "a571dcf5-265e-4292-a803-2e9f4a892009",
+			"name": "Excluir usuario",
+			"url": "http://localhost:5000/api/v1/sessions/686412a30b46c0776345ea18",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "4d97e4c2-9d85-4d44-ab97-ad709caada72",
+			"name": "restaurar cadeiras",
+			"url": "http://localhost:5000/api/v1/sessions/686412a30b46c0776345ea0e/reset-seats",
+			"time": 9,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "00b966e8-52ea-439a-9124-575381c03c7a",
+			"name": "Buscar todas as reservas",
+			"url": "http://localhost:5000/api/v1/reservations",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "68033b0d-fc34-460e-a7ab-59efbc206f2f",
+			"name": "Buscar mais detalhes da reserva",
+			"url": "http://localhost:5000/api/v1/reservations/685c8c3c3ea581f49715deb8",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "dd816c06-a621-4138-b681-ca8340acb51d",
+			"name": "ver reservas sem autenticação",
+			"url": "http://localhost:5000/api/v1/reservations",
+			"time": 4,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 400": false
+			},
+			"testPassFailCounts": {
+				"Status code é 400": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code é 400": false
+				}
+			]
+		},
+		{
+			"id": "80dd2107-00e1-45ee-bc37-ec6b33ee6030",
+			"name": "Buscar todas as reservas de usuário",
+			"url": "http://localhost:5000/api/v1/reservations/me",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "cc004ab5-a23d-4f8c-bab1-eb02e3e1b89f",
+			"name": "Criar nova reserva",
+			"url": "http://localhost:5000/api/v1/reservations",
+			"time": 9,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 201": false
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				9
+			],
+			"allTests": [
+				{
+					"Status code é 201": false
+				}
+			]
+		},
+		{
+			"id": "93b41f5c-cd7e-4ad8-b7d2-1cf82e280e69",
+			"name": "Atualizar reservas",
+			"url": "http://localhost:5000/api/v1/reservations/685c8c3c3ea581f49715deb8",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "9937ae3d-9faa-422f-b181-b6e88d074236",
+			"name": "Excluir reserva",
+			"url": "http://localhost:5000/api/v1/reservations/685c8cc63ea581f49715df56",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "71f6b8ea-35f7-4650-80bd-0f5fd96340d6",
+			"name": "Excluir reserva",
+			"url": "http://localhost:5000/api/v1/reservations/685c8cc63ea581f49715df56",
+			"time": 8,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 403": false
+			},
+			"testPassFailCounts": {
+				"Status code é 403": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				8
+			],
+			"allTests": [
+				{
+					"Status code é 403": false
+				}
+			]
+		},
+		{
+			"id": "69714725-3044-4c38-8659-7d9fd2ac09b7",
+			"name": "Criar filme",
+			"url": "http://localhost:5000/api/v1/movies",
+			"time": 6,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 201": false
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status code é 201": false
+				}
+			]
+		},
+		{
+			"id": "65b080e2-3d45-4a39-9aa5-959df7d567e7",
+			"name": "Criar filme com nomes invalidos",
+			"url": "http://localhost:5000/api/v1/movies",
+			"time": 11,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 201": false
+			},
+			"testPassFailCounts": {
+				"Status code é 201": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code é 201": false
+				}
+			]
+		},
+		{
+			"id": "9136fd13-e88b-423f-a38d-7e0c85131f29",
+			"name": "Atualizar filme",
+			"url": "http://localhost:5000/api/v1/movies/686412a30b46c0776345ea07",
+			"time": 7,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "572eead9-25b2-4b22-b0b6-fdacbf8ee3b4",
+			"name": "listar filmes",
+			"url": "http://localhost:5000/api/v1/movies",
+			"time": 96,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				96
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "dc5f2c90-e565-49c6-892f-84f606d8e505",
+			"name": "Buscar detalhes de filmes",
+			"url": "http://localhost:5000/api/v1/movies/686412a30b46c0776345ea07",
+			"time": 1276,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code é 200": true
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1276
+			],
+			"allTests": [
+				{
+					"Status code é 200": true
+				}
+			]
+		},
+		{
+			"id": "e23d2e7a-72b7-4205-a10c-17da141f8dea",
+			"name": "Buscar detalhes de filmes com id invalido",
+			"url": "http://localhost:5000/api/v1/movies/685c49e82792921ce8b1ceoo9",
+			"time": 57,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code é 200": false
+			},
+			"testPassFailCounts": {
+				"Status code é 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				57
+			],
+			"allTests": [
+				{
+					"Status code é 200": false
+				}
+			]
+		},
+		{
+			"id": "a36b20e6-368b-476a-af28-31443ca97b74",
+			"name": "Excluir inexistente",
+			"url": "http://localhost:5000/api/v1/movies/685ee35f9828b636d8ealala",
+			"time": 19,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {
+				"Status code é 404": false
+			},
+			"testPassFailCounts": {
+				"Status code é 404": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Status code é 404": false
+				}
+			]
+		},
+		{
+			"id": "92819227-c98e-4053-939b-8ef16476ecb6",
+			"name": "New Request",
+			"url": "http://localhost:5000/api/v1/movies/686412a30b46c0776345ea08",
+			"time": 10,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 4819,
+	"collection": {
+		"requests": [
+			{
+				"id": "94440517-6fa5-49e1-a93b-3f590ac6c349",
+				"method": "POST"
+			},
+			{
+				"id": "35b1a156-936a-43b5-bd39-e694fff8a3bb",
+				"method": "POST"
+			},
+			{
+				"id": "7bf6f192-0041-421a-91d4-c6aa21c69043",
+				"method": "POST"
+			},
+			{
+				"id": "1bf35e84-f487-45a8-944e-118c9e82013c",
+				"method": "POST"
+			},
+			{
+				"id": "5c6f66e7-f99c-4adb-a2a1-caa8230d53a4",
+				"method": "POST"
+			},
+			{
+				"id": "0d2ab6e8-ce31-4543-92b7-df4e0d458c60",
+				"method": "POST"
+			},
+			{
+				"id": "dd7f4eb4-afa9-4812-b836-52a2f6ccd6cf",
+				"method": "POST"
+			},
+			{
+				"id": "25ba33a1-c5a0-4fc8-92d1-8d8bf89b247d",
+				"method": "POST"
+			},
+			{
+				"id": "e67a82e1-abeb-490f-974b-8f7743309fa1",
+				"method": "GET"
+			},
+			{
+				"id": "66b701c8-aa54-4707-a54b-60ea532ee233",
+				"method": "PUT"
+			},
+			{
+				"id": "4c3c3bd3-93ed-46b7-a9ef-a94a7c7061c7",
+				"method": "PUT"
+			},
+			{
+				"id": "aa5630b7-9544-438f-8c64-1d51011c78f4",
+				"method": "GET"
+			},
+			{
+				"id": "3286835e-414b-4048-9b1c-b1a65e453ef3",
+				"method": "GET"
+			},
+			{
+				"id": "ffd8e339-7434-4141-856f-e62830d4b8b8",
+				"method": "DELETE"
+			},
+			{
+				"id": "04c9b1d8-8b64-42b4-95e2-d66076d047d4",
+				"method": "GET"
+			},
+			{
+				"id": "c1475951-a46f-4029-bc09-007629c72056",
+				"method": "GET"
+			},
+			{
+				"id": "baaa1e2b-e985-468c-8bc2-bca6f2da19a2",
+				"method": "GET"
+			},
+			{
+				"id": "957ba23d-d390-4ea4-9707-66d338fcb154",
+				"method": "POST"
+			},
+			{
+				"id": "763f4b3f-54d1-4643-b80c-4f24330afd87",
+				"method": "PUT"
+			},
+			{
+				"id": "e6180c58-aa08-411c-99a0-daa835f08608",
+				"method": "PUT"
+			},
+			{
+				"id": "d72a2da0-cbd2-4116-9b15-9c95b1056e65",
+				"method": "DELETE"
+			},
+			{
+				"id": "ecae3621-f1be-4a56-8c38-d3bd448f6fd1",
+				"method": "GET"
+			},
+			{
+				"id": "eec9b8d3-284a-4b45-9369-c89ce0e28252",
+				"method": "GET"
+			},
+			{
+				"id": "83850143-6e5e-42a1-b929-0ff9c75d863a",
+				"method": "POST"
+			},
+			{
+				"id": "029eff3b-bd89-484c-8761-56064a056875",
+				"method": "PUT"
+			},
+			{
+				"id": "a571dcf5-265e-4292-a803-2e9f4a892009",
+				"method": "DELETE"
+			},
+			{
+				"id": "4d97e4c2-9d85-4d44-ab97-ad709caada72",
+				"method": "PUT"
+			},
+			{
+				"id": "00b966e8-52ea-439a-9124-575381c03c7a",
+				"method": "GET"
+			},
+			{
+				"id": "68033b0d-fc34-460e-a7ab-59efbc206f2f",
+				"method": "GET"
+			},
+			{
+				"id": "dd816c06-a621-4138-b681-ca8340acb51d",
+				"method": "GET"
+			},
+			{
+				"id": "80dd2107-00e1-45ee-bc37-ec6b33ee6030",
+				"method": "GET"
+			},
+			{
+				"id": "cc004ab5-a23d-4f8c-bab1-eb02e3e1b89f",
+				"method": "POST"
+			},
+			{
+				"id": "93b41f5c-cd7e-4ad8-b7d2-1cf82e280e69",
+				"method": "PUT"
+			},
+			{
+				"id": "9937ae3d-9faa-422f-b181-b6e88d074236",
+				"method": "DELETE"
+			},
+			{
+				"id": "71f6b8ea-35f7-4650-80bd-0f5fd96340d6",
+				"method": "DELETE"
+			},
+			{
+				"id": "69714725-3044-4c38-8659-7d9fd2ac09b7",
+				"method": "POST"
+			},
+			{
+				"id": "65b080e2-3d45-4a39-9aa5-959df7d567e7",
+				"method": "POST"
+			},
+			{
+				"id": "9136fd13-e88b-423f-a38d-7e0c85131f29",
+				"method": "PUT"
+			},
+			{
+				"id": "572eead9-25b2-4b22-b0b6-fdacbf8ee3b4",
+				"method": "GET"
+			},
+			{
+				"id": "dc5f2c90-e565-49c6-892f-84f606d8e505",
+				"method": "GET"
+			},
+			{
+				"id": "e23d2e7a-72b7-4205-a10c-17da141f8dea",
+				"method": "GET"
+			},
+			{
+				"id": "a36b20e6-368b-476a-af28-31443ca97b74",
+				"method": "DELETE"
+			},
+			{
+				"id": "92819227-c98e-4053-939b-8ef16476ecb6",
+				"method": "DELETE"
+			}
+		]
+	}
+}
